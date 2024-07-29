@@ -394,31 +394,30 @@ export default defineComponent({
     },
     bridgeFeeAmount(): BN { // in nanoton
       return toNano("1");
-
-      if (this.isToncoinTransfer) {
-        let amount = undefined;
-        try {
-          amount = toNano(this.amountInput);
-        } catch (e) {
-        }
-        if (amount === undefined) {
-          return new BN(0);
-        }
-        if (amount.lt(MINIMUM_TONCOIN_AMOUNT)) {
-          return new BN(0);
-        } else {
-          const feeFlat = toNano('5');
-          const feeFactor = decToBN('25');
-          const feeBase = decToBN('10000');
-          const rest = amount.sub(feeFlat);
-          const percentFee = rest
-              .mul(feeFactor)
-              .div(feeBase);
-          return feeFlat.add(percentFee);
-        }
-      } else { // token transfer - fixed 1 TON fee
-        return toNano("1");
-      }
+      // if (this.isToncoinTransfer) {
+      //  let amount = undefined;
+      //  try {
+      //    amount = toNano(this.amountInput);
+      //  } catch (e) {
+      //  }
+      //  if (amount === undefined) {
+      //    return new BN(0);
+      //  }
+      //  if (amount.lt(MINIMUM_TONCOIN_AMOUNT)) {
+      //    return new BN(0);
+      //  } else {
+      //    const feeFlat = toNano('5');
+      //    const feeFactor = decToBN('25');
+      //    const feeBase = decToBN('10000');
+      //    const rest = amount.sub(feeFlat);
+      //    const percentFee = rest
+      //        .mul(feeFactor)
+      //        .div(feeBase);
+      //    return feeFlat.add(percentFee);
+      //  }
+      //} else { // token transfer - fixed 1 TON fee
+      //  return toNano("1");
+      //}
     },
     bridgeFee(): string {
       if (this.token === 'ton') {
