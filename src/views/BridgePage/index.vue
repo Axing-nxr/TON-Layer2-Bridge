@@ -757,7 +757,7 @@ export default defineComponent({
         processingState: processingState,
       };
 
-      localStorage.setItem("bridgeState", JSON.stringify(state));
+      // localStorage.setItem("bridgeState", JSON.stringify(state));
     },
     deleteState() {
       if (!supportsLocalStorage()) {
