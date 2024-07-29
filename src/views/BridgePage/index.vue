@@ -154,13 +154,13 @@
 
           <!-- "You will receive {fee} {coin}" -->
 
-          <div
+          <!-- <div
               class="Bridge-willReceive"
               v-show="!isTransferInProgress && willReceive"
               :class="{ isFromTon }"
           >
             {{ willReceive }}
-          </div>
+          </div> -->
 
           <div class="Bridge-bridgeWrapper">
 
@@ -214,21 +214,22 @@
 
           <!-- "Ethereum gas fee ~ {fee} ETH" -->
 
-          <div
+          <!-- <div
               class="Bridge-pairFee"
               v-show="!isTransferInProgress"
           >
             {{ pairFee }}
           </div>
 
-          <!-- "Bridge fee - 5 TON + 0.25% of amount" -->
+          "Bridge fee - 5 TON + 0.25% of amount"
 
           <div
               class="Bridge-bridgeFee"
               v-show="!isTransferInProgress"
           >
             {{ bridgeFee }}
-          </div>
+          </div>-->
+          
         </div>
       </main>
 
