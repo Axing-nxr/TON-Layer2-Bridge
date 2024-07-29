@@ -4,7 +4,7 @@
 	"private": true,
 	"license": "GPL-3.0",
 	"scripts": {
-		"serve": "clear && vue-cli-service serve --port 3000",
+		"serve": "clear && vue-cli-service serve --port 10079",
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint",
 		"lint:fix": "vue-cli-service lint -- --fix",
