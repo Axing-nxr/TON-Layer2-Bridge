@@ -393,6 +393,7 @@ export default defineComponent({
       });
     },
     bridgeFeeAmount(): BN { // in nanoton
+      return toNano("1");
 
       if (this.isToncoinTransfer) {
         let amount = undefined;
