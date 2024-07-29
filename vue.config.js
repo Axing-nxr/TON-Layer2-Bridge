@@ -3,9 +3,8 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = defineConfig({
   devServer: {
-    overlay: {
-      warnings: false,
-      errors: false
+    client: {
+      overlay: false
     }
   },
   publicPath: process.env.BASE_URL,
