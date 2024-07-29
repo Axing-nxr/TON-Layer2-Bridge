@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.LayoutDefault {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	color: @c-text-light;
+}
+
+body,
+input,
+button {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+	// word-break: break-all;
+}
+
+#tonConnectButton {
+	position: fixed;
+	right: 220px;
+	top: 20px;
+	z-index: 4;
+
+	@media (max-width: 560px) {
+		top: 12px;
+		right: 164px;
+		transform: scale(0.8, 0.8);
+	}
+}
+
+tc-root button {
+	text-align: center !important;
+}

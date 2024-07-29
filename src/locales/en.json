@@ -1,0 +1,161 @@
+{
+  "logoLabel": "Bridge",
+  "connectWallet": "Connect Wallet",
+  "testnetMessage": "This is the testnet version. Dont send real coins!",
+  "providers": {
+    "metamask": "Metamask",
+    "walletConnect": "WalletConnect",
+    "walletLink": "Coinbase Wallet"
+  },
+  "networks": {
+    "ton": {
+      "transactionWait": "Please wait for the TON transaction to be processed",
+      "transactionSend": "Please send TON transaction in {provider}",
+
+      "currency": "Toncoin",
+      "transactionCompleted": "TON transaction completed successfully",
+      "transactionSend1": "Please send ",
+      "transactionSend2": "Toncoin to the address",
+      "transactionSendComment": "with the comment",
+      "openWallet": "Open Wallet",
+      "generateQRCode": "Generate QR Code",
+      "scanQRCode": "or scan QR code below",
+      "errors": {
+        "invalidAddress": "Not valid TON address"
+      },
+      "main": {
+        "name": "The Open Network",
+        "nameSwitcher": "The Open\nNetwork",
+        "nameShort": "TON",
+        "coin": "Toncoin",
+        "coinShort": "Toncoin"
+      },
+      "test": {
+        "name": "TON Testnet",
+        "nameSwitcher": "TON\nTestnet",
+        "nameShort": "TON",
+        "coin": "Toncoin",
+        "coinShort": "Toncoin"
+      }
+    },
+    "eth": {
+      "currency": "ETH",
+      "pageTitle": "TON-ETH Bridge",
+      "gasFee": "TON Layer2 gas fee ~ {fee} ETH",
+      "transactionCompleted": "TON Layer2 transaction completed successfully",
+      "transactionWait": "Please wait for the TON Layer2 transaction to be processed",
+      "transactionSend": "Please send TON Layer2 transaction in {provider}",
+      "blocksConfirmations": "Collected {count} TON Layer2 block confirmations",
+      "errors": {
+        "invalidAddress": "Not valid ETH address",
+        "lowBalance": "You need to have ETH on your wallet to pay for gas in the TON Layer2 network"
+      },
+      "main": {
+        "name": "TON Layer2 Network",
+        "nameSwitcher": "TON Layer2\nNetwork",
+        "nameShort": "ETH",
+        "coin": "TONCOIN (ERC-20)",
+        "coinShort": "TONCOIN"
+      },
+      "test": {
+        "name": "TON Layer2",
+        "nameSwitcher": "TON\nLayer2",
+        "nameShort": "ETH",
+        "coin": "TONCOIN (ERC-20)",
+        "coinShort": "TONCOIN"
+      }
+    },
+    "bsc": {
+      "currency": "BNB",
+      "pageTitle": "TON-BSC Bridge",
+      "gasFee": "BSC gas fee ~ {fee} BNB",
+      "transactionCompleted": "BSC transaction completed successfully",
+      "transactionWait": "Please wait for the BSC transaction to be processed",
+      "transactionSend": "Please send BSC transaction in {provider}",
+      "blocksConfirmations": "Collected {count} BSC block confirmations",
+      "errors": {
+        "invalidAddress": "Not valid BSC address",
+        "lowBalance": "You need to have BNB on your wallet to pay for gas in the BSC network"
+      },
+      "main": {
+        "name": "Binance Smart Chain",
+        "nameSwitcher": "Binance\nSmart Chain",
+        "nameShort": "BSC",
+        "coin": "TONCOIN (BEP-20)",
+        "coinShort": "TONCOIN"
+      },
+      "test": {
+        "name": "BSC Testnet",
+        "nameSwitcher": "BSC\nTestnet",
+        "nameShort": "BSC",
+        "coin": "TONCOIN (BEP-20)",
+        "coinShort": "TONCOIN"
+      }
+    }
+  },
+  "tokenAddress": "Token address in {network} network",
+  "sendToken": "Asset",
+  "amountOfTon": "Amount {tokenSymbol}",
+  "addressInputLabel": "Destination address in {network} network",
+  "willReceive": "You will receive {fee} {coin}",
+  "bridgeFeeAbove10": "Bridge fee - {fee} TON",
+  "bridgeFeeBelow10": "Bridge fee - 5 TON + 0.25% of amount",
+  "tokenBridgeFee": "Bridge fee - 1 TON",
+  "tokenBridgeFeeToEvm": "Bridge fee - 1 TON + 0.1% of token amount",
+  "sourceCode": "Source Code",
+  "support": "Support",
+  "howItWorks": "How it works",
+  "documentation": "Documentation",
+
+  "transferHistory": "History",
+  "disconnectWallet": "Disconnect",
+
+  "transfer": "Transfer",
+  "getToncoin": "Get {coin}",
+  "done": "Done",
+  "cancel": "Cancel",
+
+  "blocksConfirmationsCollected": "The confirmations of the blocks are collected",
+  "blocksConfirmationsWaiting": "Wait a bit for the blocks confirmations",
+  "oraclesConfirmations": "Collected {count} confirmations of oracles",
+  "oraclesConfirmationsCollected": "The confirmations of the oracles are collected",
+  "oraclesConfirmationsWaiting": "Wait a bit for the oracles to confirm the transfer",
+  "getCoinsByProvider": "Get {toCoin}s by {provider}",
+  "coinsSent": "{toCoin}s have been sent",
+  "getCoins": "Get {toCoin}s in {toNetwork}",
+  "confirmInWallet": "Confirm in {provider}",
+
+  "otherTokens": "Other tokens",
+  "tokens": "token",
+  "approve": "Approve",
+
+  "instruction": "Instruction",
+
+  "errors": {
+    "alertTitleError": "Error",
+    "alertButtonClose": "Close",
+    "notValidAmount": "Amount is not valid number",
+    "amountBelow10": "Amount must be at least 10 TON",
+    "needPersonalAddress": "Please enter YOUR address to receive",
+    "toncoinBalance": "You have only {balance} {coin}",
+    "installMetamask": "Please install MetaMask",
+    "wrongProviderNetwork": "Set chain to {network} in {provider}",
+    "cantGetAddress": "Can't get account address",
+    "providerIsDisconnected": "{provider} is disconnected"
+  },
+
+  "history": {
+    "title": "Recent history",
+    "recentHistory": "Recent history",
+    "age": "Date",
+    "amountFrom": "Amount / From (Network)",
+    "amountTo": "Amount Received / To (Network)",
+    "fee": "Gas / Bridge Fee",
+    "status": "Status",
+    "completed": "completed",
+    "getToncoin": "Get {coin}",
+    "connect": "Connect",
+    "oracles": "{count} of oracles",
+    "notFound": "No transfers found"
+  }
+}
